@@ -57,6 +57,6 @@ app.get('*', (req, res, next) => {
   });
 });
 
-app.listen(PORT, '0.0.0.0'() => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🌟 LearnAble Backend Server listening on http://localhost:${PORT}`);
 });
