@@ -1,0 +1,740 @@
+{
+  "users": [
+    {
+      "id": "u-admin-1",
+      "name": "Dr. Sarah Collins",
+      "username": "admin@learnable.edu",
+      "role": "administrator",
+      "createdAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "u-child-1",
+      "name": "Leo Garcia",
+      "username": "leo",
+      "role": "child",
+      "createdAt": "2026-02-01T10:00:00Z"
+    },
+    {
+      "id": "u-child-2",
+      "name": "Maya Chen",
+      "username": "maya",
+      "role": "child",
+      "createdAt": "2026-02-05T11:00:00Z"
+    },
+    {
+      "id": "u-child-3",
+      "name": "Samir Patel",
+      "username": "samir",
+      "role": "child",
+      "createdAt": "2026-02-10T09:30:00Z"
+    },
+    {
+      "id": "u-child-4",
+      "name": "Chloe Dupont",
+      "username": "chloe",
+      "role": "child",
+      "createdAt": "2026-02-12T14:20:00Z"
+    }
+  ],
+  "children": [
+    {
+      "id": "c-1",
+      "userId": "u-child-1",
+      "displayName": "Leo Garcia",
+      "ageGroup": "7-9 years",
+      "learningLevel": "Intermediate",
+      "accessibilityProfile": "dyslexia",
+      "accessibilitySettings": {
+        "fontSize": "large",
+        "highContrast": false,
+        "textToSpeech": true,
+        "audioInstructions": true,
+        "reducedAnimation": false,
+        "calmMode": false,
+        "fontFamily": "lexend",
+        "readingRuler": true,
+        "largeButtons": true
+      },
+      "xp": 630,
+      "level": 4,
+      "streak": 5,
+      "avatar": "🦊",
+      "preferredLearningFormat": "visual & audio",
+      "favoriteSubjects": [
+        "Reading & Phonics",
+        "Nature & Animals"
+      ]
+    },
+    {
+      "id": "c-2",
+      "userId": "u-child-2",
+      "displayName": "Maya Chen",
+      "ageGroup": "6-8 years",
+      "learningLevel": "Intermediate",
+      "accessibilityProfile": "adhd",
+      "accessibilitySettings": {
+        "fontSize": "normal",
+        "highContrast": false,
+        "textToSpeech": true,
+        "audioInstructions": true,
+        "reducedAnimation": false,
+        "calmMode": false,
+        "fontFamily": "sans",
+        "readingRuler": true,
+        "largeButtons": true
+      },
+      "xp": 680,
+      "level": 4,
+      "streak": 8,
+      "avatar": "🚀",
+      "preferredLearningFormat": "interactive micro-tasks",
+      "favoriteSubjects": [
+        "Space Math",
+        "Focus Games"
+      ]
+    },
+    {
+      "id": "c-3",
+      "userId": "u-child-3",
+      "displayName": "Samir Patel",
+      "ageGroup": "8-10 years",
+      "learningLevel": "Beginner",
+      "accessibilityProfile": "autism",
+      "accessibilitySettings": {
+        "fontSize": "normal",
+        "highContrast": false,
+        "textToSpeech": false,
+        "audioInstructions": true,
+        "reducedAnimation": true,
+        "calmMode": true,
+        "fontFamily": "sans",
+        "readingRuler": false,
+        "largeButtons": true
+      },
+      "xp": 310,
+      "level": 2,
+      "streak": 3,
+      "avatar": "🦉",
+      "preferredLearningFormat": "structured visual schedules",
+      "favoriteSubjects": [
+        "Emotions & Social",
+        "Math Puzzles"
+      ]
+    },
+    {
+      "id": "c-4",
+      "userId": "u-child-4",
+      "displayName": "Chloe Dupont",
+      "ageGroup": "6-7 years",
+      "learningLevel": "Beginner",
+      "accessibilityProfile": "slow_learning",
+      "accessibilitySettings": {
+        "fontSize": "large",
+        "highContrast": false,
+        "textToSpeech": true,
+        "audioInstructions": true,
+        "reducedAnimation": false,
+        "calmMode": false,
+        "fontFamily": "lexend",
+        "readingRuler": false,
+        "largeButtons": true
+      },
+      "xp": 240,
+      "level": 2,
+      "streak": 2,
+      "avatar": "🐬",
+      "preferredLearningFormat": "step-by-step repetition",
+      "favoriteSubjects": [
+        "Word Sounds",
+        "Number Safari"
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t-1",
+      "name": "Ms. Sarah Jenkins",
+      "email": "sarah.jenkins@learnable.edu",
+      "subject": "Special Education Specialist",
+      "assignedChildren": 12,
+      "status": "Active"
+    },
+    {
+      "id": "t-2",
+      "name": "Mr. David Alva",
+      "email": "david.alva@learnable.edu",
+      "subject": "Inclusive STEM & Numeracy",
+      "assignedChildren": 9,
+      "status": "Active"
+    },
+    {
+      "id": "t-3",
+      "name": "Dr. Elena Rostova",
+      "email": "elena.rostova@learnable.edu",
+      "subject": "Speech & Reading Interventionist",
+      "assignedChildren": 14,
+      "status": "Active"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "les-1",
+      "title": "Friendly Word Sounds (Phonics)",
+      "description": "Discover playful vowel sounds and rhyme pairs with cheerful animal buddies.",
+      "subject": "Reading & Phonics",
+      "difficulty": "Easy",
+      "order": 1,
+      "icon": "📚",
+      "color": "from-sky-400 to-blue-500",
+      "estimatedMinutes": 8,
+      "status": "published",
+      "summary": "Learn short 'a' and 'e' sounds, identify rhyming sounds, and unlock friendly words.",
+      "slides": [
+        {
+          "title": "Meet Apple the Ant! 🍎🐜",
+          "text": "The letter 'A' makes a cheerful 'Ah' sound like in Apple and Ant! Say it with me: Ah-Ah-Apple!",
+          "tip": "Click the speaker button to hear Apple the Ant say the sound!"
+        },
+        {
+          "title": "Finding Rhyming Friends 🎵",
+          "text": "Words that rhyme sound like singing twins at the end. 'Cat' rhymes with 'Hat' and 'Bat'!",
+          "tip": "Listen carefully to the end sound of each friendly word."
+        }
+      ]
+    },
+    {
+      "id": "les-2",
+      "title": "Safari Counting Adventure",
+      "description": "Count animals on a sunny savanna expedition and build strong number sense.",
+      "subject": "Math",
+      "difficulty": "Easy",
+      "order": 2,
+      "icon": "🦁",
+      "color": "from-amber-400 to-orange-500",
+      "estimatedMinutes": 10,
+      "status": "published",
+      "summary": "Practice counting groups of 1 to 10, comparing bigger and smaller groups, and basic addition.",
+      "slides": [
+        {
+          "title": "Welcome to the Animal Safari! 🌿",
+          "text": "Today we are helping Ranger Leo count the animals at the waterhole. 3 giraffes plus 2 zebras makes 5 animal friends!",
+          "tip": "Touch each animal one by one as you count out loud."
+        },
+        {
+          "title": "Number Friends Balance ⚖️",
+          "text": "When two sides have the same number, they are equal! Like 4 paw prints and 4 paws.",
+          "tip": "Grouping into pairs makes counting quick and fun!"
+        }
+      ]
+    },
+    {
+      "id": "les-3",
+      "title": "Understanding Big Feelings",
+      "description": "Explore feelings, face expressions, and calming breathing techniques with Buddy.",
+      "subject": "Emotions & Social",
+      "difficulty": "Easy",
+      "order": 3,
+      "icon": "💖",
+      "color": "from-pink-400 to-rose-500",
+      "estimatedMinutes": 6,
+      "status": "published",
+      "summary": "Recognize happy, worried, excited, and overwhelmed feelings. Learn the Balloon Breath.",
+      "slides": [
+        {
+          "title": "Feelings are like Weather ☀️🌧️",
+          "text": "Every person experiences feelings. Some days feel sunny and cheerful, and some days feel stormy. All feelings are okay to have!",
+          "tip": "Naming how you feel helps your brain feel calm and safe."
+        },
+        {
+          "title": "The Magic Balloon Breath 🎈",
+          "text": "When feeling worried or frustrated, breathe in deep like inflating a gentle balloon, hold for 2, and blow out gently like a cloud.",
+          "tip": "Try doing one balloon breath right now!"
+        }
+      ]
+    },
+    {
+      "id": "les-4",
+      "title": "Curious Planet: Plants & Sunshine",
+      "description": "See how seeds sprout into green leaves with water, soil, and golden sunshine.",
+      "subject": "Science & Nature",
+      "difficulty": "Medium",
+      "order": 4,
+      "icon": "🌱",
+      "color": "from-emerald-400 to-teal-500",
+      "estimatedMinutes": 9,
+      "status": "published",
+      "summary": "Understand what living plants need to grow and match garden tools to their jobs.",
+      "slides": [
+        {
+          "title": "A Tiny Seed's Journey 🌰",
+          "text": "Under the cozy dark soil, a seed drinks water drops and starts reaching little roots down and green shoots up toward the sunshine!",
+          "tip": "Plants make their own energy using warm rays of light."
+        }
+      ]
+    },
+    {
+      "id": "les-5",
+      "title": "Memory Galaxy: Patterns & Focus",
+      "description": "Train working memory and visual focus with stellar pattern sequences.",
+      "subject": "Focus & Logic",
+      "difficulty": "Medium",
+      "order": 5,
+      "icon": "✨",
+      "color": "from-purple-400 to-indigo-500",
+      "estimatedMinutes": 7,
+      "status": "published",
+      "summary": "Match space patterns, find hidden constellations, and practice mindful focus.",
+      "slides": [
+        {
+          "title": "Look Closely at the Star Constellations ⭐",
+          "text": "Patterns repeat in rhythm: Blue Star, Yellow Moon, Blue Star... what comes next? You got it!",
+          "tip": "Take your time. There is never any rush!"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "lessonId": "les-1",
+      "type": "multiple_choice",
+      "title": "Which Word Rhymes with 'CAT'?",
+      "question": "Listen and choose: which word has the same rhyming sound as 'CAT'?",
+      "promptAudio": "Which word rhymes with CAT? Cat... Bat, Sun, or Dog?",
+      "options": [
+        {
+          "id": "opt-1",
+          "text": "BAT 🦇",
+          "isCorrect": true,
+          "audio": "Bat"
+        },
+        {
+          "id": "opt-2",
+          "text": "SUN ☀️",
+          "isCorrect": false,
+          "audio": "Sun"
+        },
+        {
+          "id": "opt-3",
+          "text": "DOG 🐶",
+          "isCorrect": false,
+          "audio": "Dog"
+        }
+      ],
+      "correctAnswer": "opt-1",
+      "hint": "Listen to the ending sound: C-AT. Which friend ends with -AT?",
+      "explanation": "Great job! 'Cat' and 'Bat' both end with the cheerful sound '-at'!",
+      "difficulty": "easy",
+      "xpReward": 30
+    },
+    {
+      "id": "act-2",
+      "lessonId": "les-1",
+      "type": "match_pairs",
+      "title": "Match the Letter Sounds to Pictures",
+      "question": "Connect each beginning letter sound to the matching picture buddy!",
+      "promptAudio": "Match each letter to the animal that starts with its sound.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "Letter A (Ah) 🅰️",
+          "right": "Alligator 🐊",
+          "matchId": "m1"
+        },
+        {
+          "id": "p2",
+          "left": "Letter B (Buh) 🅱️",
+          "right": "Bear 🐻",
+          "matchId": "m2"
+        },
+        {
+          "id": "p3",
+          "left": "Letter C (Cuh) 🅲",
+          "right": "Cat 🐱",
+          "matchId": "m3"
+        }
+      ],
+      "hint": "Say each animal's name out loud. What sound do you hear first?",
+      "explanation": "Super star! A for Alligator, B for Bear, and C for Cat!",
+      "difficulty": "easy",
+      "xpReward": 40
+    },
+    {
+      "id": "act-3",
+      "lessonId": "les-2",
+      "type": "drag_drop",
+      "title": "Sort the Safari Friends by Size",
+      "question": "Sort the animals into 'Small Animals' and 'Big Animals' groups!",
+      "promptAudio": "Put each friendly animal in the right basket: Small or Big.",
+      "categories": [
+        {
+          "id": "cat-small",
+          "title": "Small Friends 🐁"
+        },
+        {
+          "id": "cat-big",
+          "title": "Big Giants 🐘"
+        }
+      ],
+      "items": [
+        {
+          "id": "i1",
+          "text": "Little Mouse 🐭",
+          "targetCategory": "cat-small"
+        },
+        {
+          "id": "i2",
+          "text": "Huge Elephant 🐘",
+          "targetCategory": "cat-big"
+        },
+        {
+          "id": "i3",
+          "text": "Baby Sparrow 🐦",
+          "targetCategory": "cat-small"
+        },
+        {
+          "id": "i4",
+          "text": "Tall Giraffe 🦒",
+          "targetCategory": "cat-big"
+        }
+      ],
+      "hint": "Think about who could fit inside a backpack and who is bigger than a car!",
+      "explanation": "Awesome sorting! You organized all the safari animals correctly!",
+      "difficulty": "easy",
+      "xpReward": 45
+    },
+    {
+      "id": "act-4",
+      "lessonId": "les-3",
+      "type": "image_id",
+      "title": "Identify the Happy Smile Face",
+      "question": "Which friendly buddy looks HAPPY and smiling?",
+      "promptAudio": "Touch the face that shows a happy, smiling friend.",
+      "options": [
+        {
+          "id": "opt-f1",
+          "label": "Smiling Sunny",
+          "emoji": "😄",
+          "isCorrect": true,
+          "description": "Big warm smile with bright eyes"
+        },
+        {
+          "id": "opt-f2",
+          "label": "Frowning Frown",
+          "emoji": "😢",
+          "isCorrect": false,
+          "description": "Sad downturned lips"
+        },
+        {
+          "id": "opt-f3",
+          "label": "Sleepy Yawn",
+          "emoji": "😴",
+          "isCorrect": false,
+          "description": "Eyes closed sleeping"
+        }
+      ],
+      "correctAnswer": "opt-f1",
+      "hint": "Look for the wide smile and cheerful sparkling eyes!",
+      "explanation": "You spotted it! A bright smile shows joy and happiness!",
+      "difficulty": "easy",
+      "xpReward": 35
+    },
+    {
+      "id": "act-5",
+      "lessonId": "les-3",
+      "type": "story_choice",
+      "title": "Buddy's Calming Adventure",
+      "question": "Buddy the Owl feels nervous before flying in the wind. What should Buddy do?",
+      "promptAudio": "Help Buddy choose what to do when feeling nervous.",
+      "story": "Buddy's little wings are trembling. The wind is whooshing through the trees. Buddy's heart is thumping fast.",
+      "options": [
+        {
+          "id": "s-1",
+          "text": "Take 3 deep Balloon Breaths and tell a friend 🎈",
+          "isCorrect": true
+        },
+        {
+          "id": "s-2",
+          "text": "Hold feelings inside and hide in the dark forever 🙈",
+          "isCorrect": false
+        },
+        {
+          "id": "s-3",
+          "text": "Shout loudly at the trees 🌳",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "s-1",
+      "hint": "Remember the calming balloon breath we practiced in the lesson!",
+      "explanation": "Wonderful decision! Taking slow deep breaths and talking to someone you trust always helps calm nervous feelings.",
+      "difficulty": "easy",
+      "xpReward": 50
+    },
+    {
+      "id": "act-6",
+      "lessonId": "les-5",
+      "type": "memory_game",
+      "title": "Cosmic Memory Match",
+      "question": "Find all the matching cosmic cards!",
+      "promptAudio": "Flip the cards to find matching celestial buddies.",
+      "cards": [
+        {
+          "id": "c1",
+          "pairKey": "star",
+          "display": "⭐ Star"
+        },
+        {
+          "id": "c2",
+          "pairKey": "star",
+          "display": "⭐ Star"
+        },
+        {
+          "id": "c3",
+          "pairKey": "planet",
+          "display": "🪐 Saturn"
+        },
+        {
+          "id": "c4",
+          "pairKey": "planet",
+          "display": "🪐 Saturn"
+        },
+        {
+          "id": "c5",
+          "pairKey": "rocket",
+          "display": "🚀 Rocket"
+        },
+        {
+          "id": "c6",
+          "pairKey": "rocket",
+          "display": "🚀 Rocket"
+        }
+      ],
+      "hint": "Pay close attention to where each shape is hiding when you turn it over.",
+      "explanation": "Outstanding focus! You matched every pair in the galaxy!",
+      "difficulty": "medium",
+      "xpReward": 60
+    },
+    {
+      "id": "act-7",
+      "lessonId": "les-2",
+      "type": "puzzle",
+      "title": "Safari Math Puzzle",
+      "question": "Solve the fruit puzzle: 3 apples + 2 apples = how many apples total?",
+      "promptAudio": "What is 3 apples plus 2 apples?",
+      "options": [
+        {
+          "id": "p-opt-1",
+          "text": "4 Apples",
+          "isCorrect": false
+        },
+        {
+          "id": "p-opt-2",
+          "text": "5 Apples 🍎🍎🍎🍎🍎",
+          "isCorrect": true
+        },
+        {
+          "id": "p-opt-3",
+          "text": "6 Apples",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "p-opt-2",
+      "hint": "Put 3 fingers up on one hand, and 2 fingers on the other hand. Count them all together!",
+      "explanation": "Math champion! 3 + 2 = 5! You got it right!",
+      "difficulty": "easy",
+      "xpReward": 35
+    }
+  ],
+  "progress": [
+    {
+      "id": "prg-1",
+      "childId": "c-1",
+      "lessonId": "les-1",
+      "completionPercentage": 100,
+      "accuracy": 100,
+      "timeSpent": 515,
+      "lastAccessed": "2026-10-07T19:05:02.863Z",
+      "status": "completed"
+    },
+    {
+      "id": "prg-2",
+      "childId": "c-1",
+      "lessonId": "les-2",
+      "completionPercentage": 80,
+      "accuracy": 90,
+      "timeSpent": 350,
+      "lastAccessed": "2026-10-07T10:15:00Z",
+      "status": "in_progress"
+    },
+    {
+      "id": "prg-3",
+      "childId": "c-1",
+      "lessonId": "les-3",
+      "completionPercentage": 40,
+      "accuracy": 85,
+      "timeSpent": 180,
+      "lastAccessed": "2026-10-07T14:00:00Z",
+      "status": "in_progress"
+    },
+    {
+      "id": "prg-4",
+      "childId": "c-1",
+      "lessonId": "les-4",
+      "completionPercentage": 0,
+      "accuracy": 0,
+      "timeSpent": 0,
+      "lastAccessed": null,
+      "status": "locked"
+    },
+    {
+      "id": "prg-5",
+      "childId": "c-1",
+      "lessonId": "les-5",
+      "completionPercentage": 0,
+      "accuracy": 0,
+      "timeSpent": 0,
+      "lastAccessed": null,
+      "status": "locked"
+    },
+    {
+      "id": "prg-m1",
+      "childId": "c-2",
+      "lessonId": "les-1",
+      "completionPercentage": 100,
+      "accuracy": 100,
+      "timeSpent": 300,
+      "lastAccessed": "2026-10-05T12:00:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "prg-m2",
+      "childId": "c-2",
+      "lessonId": "les-2",
+      "completionPercentage": 100,
+      "accuracy": 92,
+      "timeSpent": 480,
+      "lastAccessed": "2026-10-06T11:00:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "prg-s1",
+      "childId": "c-3",
+      "lessonId": "les-1",
+      "completionPercentage": 60,
+      "accuracy": 75,
+      "timeSpent": 520,
+      "lastAccessed": "2026-10-06T16:00:00Z",
+      "status": "in_progress"
+    },
+    {
+      "id": "prg-c1",
+      "childId": "c-4",
+      "lessonId": "les-1",
+      "completionPercentage": 50,
+      "accuracy": 70,
+      "timeSpent": 600,
+      "lastAccessed": "2026-10-07T09:00:00Z",
+      "status": "in_progress"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-1",
+      "childId": "c-1",
+      "title": "First Lesson Completed! 🌟",
+      "description": "Finished your very first learning adventure on LearnAble.",
+      "icon": "🌟",
+      "category": "Milestone",
+      "earnedAt": "2026-10-06T15:30:00Z",
+      "xpReward": 50
+    },
+    {
+      "id": "ach-2",
+      "childId": "c-1",
+      "title": "Quick Learner ⚡",
+      "description": "Answered 3 questions correctly on the first attempt!",
+      "icon": "⚡",
+      "category": "Mastery",
+      "earnedAt": "2026-10-06T15:35:00Z",
+      "xpReward": 60
+    },
+    {
+      "id": "ach-3",
+      "childId": "c-1",
+      "title": "5-Day Streak Explorer 🔥",
+      "description": "Visited LearnAble for 5 days in a row of joyful discovery.",
+      "icon": "🔥",
+      "category": "Dedication",
+      "earnedAt": "2026-10-07T10:15:00Z",
+      "xpReward": 100
+    },
+    {
+      "id": "ach-4",
+      "childId": "c-1",
+      "title": "Problem Solver 🧩",
+      "description": "Conquered a multi-step sorting and puzzle challenge.",
+      "icon": "🧩",
+      "category": "Skill",
+      "earnedAt": "2026-10-07T10:20:00Z",
+      "xpReward": 80
+    },
+    {
+      "id": "ach-5",
+      "childId": "c-1",
+      "title": "Super Explorer 🧭",
+      "description": "Explored 3 different subject worlds in one week.",
+      "icon": "🧭",
+      "category": "Curiosity",
+      "earnedAt": "2026-10-07T18:50:29.139Z",
+      "xpReward": 120
+    },
+    {
+      "id": "ach-6",
+      "childId": "c-1",
+      "title": "Kind Heart Medal 💖",
+      "description": "Completed the Big Feelings lesson and practiced calm breathing.",
+      "icon": "💖",
+      "category": "Empathy",
+      "earnedAt": null,
+      "xpReward": 90
+    }
+  ],
+  "aiInteractions": [
+    {
+      "id": "ai-1",
+      "childId": "c-1",
+      "role": "assistant",
+      "message": "Hi Leo! 🌟 I'm Buddy, your learning sidekick! Whenever you need a little hint or cheer, I'm right here with you. What would you like to explore today?",
+      "timestamp": "2026-10-07T10:00:00Z"
+    },
+    {
+      "id": "ai-1791399029148",
+      "childId": "c-1",
+      "role": "assistant",
+      "message": "You can do this, Leo! 🦉 Here is a secret clue: Listen closely to the sound at the very end of the word. Does 'CAT' end like '-at'? Say 'Bat' and 'Cat' out loud together—can you hear the singing twins? 🎵",
+      "timestamp": "2026-10-07T18:50:29.148Z"
+    },
+    {
+      "id": "ai-1791399468749",
+      "childId": "c-1",
+      "role": "assistant",
+      "message": "Hi there, super learner Leo! 🚀 I'm Buddy, and I'm thrilled to be your learning sidekick today! What adventure shall we conquer next?",
+      "timestamp": "2026-10-07T18:57:48.749Z"
+    },
+    {
+      "id": "ai-1791399735775",
+      "childId": "c-1",
+      "role": "assistant",
+      "message": "You can do this, Leo! 🦉 Here is a secret clue: Listen closely to the sound at the very end of the word. Does 'CAT' end like '-at'? Say 'Bat' and 'Cat' out loud together—can you hear the singing twins? 🎵",
+      "timestamp": "2026-10-07T19:02:15.775Z"
+    }
+  ],
+  "systemSettings": {
+    "tutorName": "LearnAble Buddy",
+    "safetyLevel": "Maximum (Child-Safe Filter Enabled)",
+    "adaptiveDifficulty": true,
+    "audioAssistanceDefault": true,
+    "dyslexiaFontDefault": false,
+    "geminiApiKeyConfigured": false
+  }
+}

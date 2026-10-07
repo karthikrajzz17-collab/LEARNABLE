@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Lexend:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-child: 'Fredoka', 'Lexend', system-ui, sans-serif;
+    --font-admin: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-dyslexia: 'Lexend', 'Comic Sans MS', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: var(--font-child);
+    background-color: #f8fafc;
+    color: #1e293b;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Accessibility Modes */
+
+/* Font Families */
+body.font-lexend {
+  font-family: 'Lexend', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.1em !important;
+  line-height: 1.75 !important;
+}
+
+/* Font Sizes */
+body.font-size-large {
+  font-size: 1.15rem;
+}
+body.font-size-large h1 {
+  font-size: 2.5rem;
+}
+body.font-size-large h2 {
+  font-size: 2rem;
+}
+body.font-size-large button {
+  font-size: 1.15rem;
+}
+
+body.font-size-xlarge {
+  font-size: 1.3rem;
+}
+body.font-size-xlarge h1 {
+  font-size: 3rem;
+}
+body.font-size-xlarge h2 {
+  font-size: 2.3rem;
+}
+body.font-size-xlarge button {
+  font-size: 1.3rem;
+}
+
+/* High Contrast Mode */
+body.high-contrast {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+
+body.high-contrast * {
+  border-color: #ffff00 !important;
+}
+
+body.high-contrast .bg-white,
+body.high-contrast .bg-slate-50,
+body.high-contrast .bg-slate-100,
+body.high-contrast .bg-sky-50,
+body.high-contrast .bg-amber-50,
+body.high-contrast .bg-emerald-50,
+body.high-contrast .bg-purple-50 {
+  background-color: #121212 !important;
+  color: #ffff00 !important;
+}
+
+body.high-contrast button {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  border: 2px solid #ffffff !important;
+}
+
+body.high-contrast button:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+body.high-contrast p,
+body.high-contrast span,
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast h4 {
+  color: #ffff00 !important;
+}
+
+/* Calm Mode (Sensory Friendly - muted warm pastels, low sensory stimulation) */
+body.calm-mode {
+  background-color: #f5f3ef !important;
+  color: #3b3a36 !important;
+}
+body.calm-mode * {
+  box-shadow: none !important;
+}
+body.calm-mode .bg-white {
+  background-color: #ede8e1 !important;
+  border-color: #d8d0c5 !important;
+}
+
+/* Reduced Animation Mode */
+body.reduced-animation,
+body.reduced-animation * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Large Touch Targets */
+body.large-touch-targets button,
+body.large-touch-targets a,
+body.large-touch-targets input,
+body.large-touch-targets select {
+  min-height: 54px !important;
+  min-width: 54px !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
